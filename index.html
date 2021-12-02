@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Archive</title>
+    <!-- Bootstrap Stylsheet CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- fav icon link -->
+    <link rel="shortcut icon"
+        href="https://cdn3.vectorstock.com/i/1000x1000/23/77/book-icon-logo-vector-2982377.jpg"
+        type="image/x-icon">
+</head>
+
+<body>
+    <section class="container my-2">
+        <h2 class="text-center text-info ">Search Your Books!</h2>
+        <div>
+            <!-- search button -->
+            <div class="input-group mb-3">
+                <input type="text" class="form-control border-3" placeholder="Enter book name" id="search-input">
+                <button onclick="searchField()" class="btn btn-outline-secondary border-3" type="button"
+                    id="search-btn">Search</button>
+            </div>
+        </div>
+        <!-- spinner & Error message-->
+        <div>
+            <h1 id="error-message" class="text-center text-danger">thik thak moto name dew na hole khelbo na #Jhankar_Mahbub_bhai !</h1>
+            <div id="spinner" class="spinner-border text-primary " style="margin-left: 50%;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <h1 id="error-message2" class="text-center text-danger">Agei bolecilam! thik thak moto name dite. akhon ami kico dibo na</h1>
+        </div>
+
+
+        <!-- result counter here -->
+        <h1 class="bg-dark text-warning text-center p-3 rounded-2" id="book-numbers"></h1>
+        <div class="py-4">
+            <div id="display-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+        </div>
+    </section>
+    <!-- bundle javaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- Connect to Java Script -->
+    <script src="index.js"></script>
+</body>
+
+</html>
